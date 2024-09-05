@@ -60,8 +60,9 @@ export default function Home() {
       <div className='h-24'></div>
       <Videos></Videos>
       <CommentAider></CommentAider>
-      <a id='scrollButton'>
-        <div className='cursor-pointer fixed bottom-4 right-4 bg-customOrange w-12 h-12'>
+      <a href='#presentation'>
+        <div className=' flex justify-center items-center content-center cursor-pointer fixed bottom-4 right-4 bg-customOrange w-12 h-12'>
+          <img src="/icons/go-arrow.png" alt="" className='-rotate-90 h-6' />
         </div>
       </a>
       <div className="bg-[url('/banner.jpg')] ">

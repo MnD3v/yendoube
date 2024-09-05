@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://yendoube.vercel.app/', // Remplace par l'URL de ton site
-    title: 'Mon Site Web',
-    description: 'Découvrez notre site web incroyable.',
+    title: 'Aide aux démunis',
+    description: "Découvrez la plateforme d'aide aux défavorisés.",
     images: [
       {
         url: 'https://i.ibb.co/zXsTRzL/Group-2-5.png', // URL de ton image

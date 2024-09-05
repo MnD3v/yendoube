@@ -19,11 +19,11 @@ const Paiement = () => {
         // router.push()
     }
     return (
-        <div className='m-12'>
+        <div className='m-6'>
             <div className='flex flex-col items-center'>
-                <h1 className='font-roboto'>Paiement</h1>
+                <h1 className='font-roboto text-3xl md:text-5xl'>Paiement</h1>
                 <h3 className='text-lg text-slate-700'>Informations personnelles</h3>
-                <div className=' my-9 grid grid-cols-2 gap-3 max-w-[850px] p-9 bg-zinc-200'>
+                <div className=' my-9 flex flex-col md:grid grid-cols-2 gap-3 max-w-[850px] p-9 bg-zinc-200'>
                     <div className='w-full'>
                         <p className='font-roboto font-semibold'>Votre nom</p>
                         <input type="text" placeholder='Votre nom' className='border-2 focus:border-1 focus:border-customOrange outline-none px-3 py-4 w-full' />
@@ -32,7 +32,7 @@ const Paiement = () => {
                         <p className='font-roboto font-semibold'>Votre prénom</p>
                         <input type="text" placeholder='Votre prénom' className='border-2 focus:border-1 focus:border-customOrange outline-none px-3 py-4 w-full' />
                     </div>
-                    <div className='col-span-2'>
+                    <div className='md:col-span-2'>
                         <p className='font-roboto font-semibold'>Votre email</p>
                         <input type="text" placeholder='Votre email' className='border-2 focus:border-1 focus:border-customOrange outline-none px-3 py-4 w-full' />
                     </div>
