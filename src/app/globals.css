@@ -66,6 +66,12 @@ h3 {
 
 }
 
+h4 {
+
+  font-weight: 700;
+
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

@@ -27,13 +27,13 @@ const Presentation = () => {
 
     const Description = () => (
         <p className="animate-fade-in-up delay-300 mt-10 text-white mx-2">
-            Chaque histoire de réussite commence par un acte de bienveillance
+            Ensemble, donnons espoir et bâtissons un avenir pour tous.
         </p>
     )
 
     const Donner = () => (
         <Link href='/paiement'>
-            <button className=" delay-1000 animate-fade-in-up text-white bg-customOrange hover:ring-offset-2 ring-offset-transparent ring ring-customOrange/50 transition-all duration-500 px-5 py-5 w-96 my-10 rounded-full">“
+            <button className="text-base   delay-1000 animate-fade-in-up text-white bg-customOrange hover:ring-offset-2 ring-offset-transparent ring ring-customOrange/50 transition-all duration-500  px-3 py-4 md:px-8 md:py-6  my-10 rounded-full">
                 DONNER MAINTENANT
             </button>
         </Link>

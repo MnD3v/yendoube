@@ -65,8 +65,8 @@ export default function Home() {
         </div>
       </a>
       <div className="bg-[url('/banner.jpg')] ">
-        <div className='bg-black/60 h-full w-full py-32 px-9'>
-          <p className=' text-4xl leading-relaxed font-roboto text-white font-bold text-center'>Devenez le <span className='font-bold text-customOrange'>père</span>  d'un orphelin, le <span className='font-bold text-customOrange'>défenseur</span>  d'une veuve, le <span className='font-bold text-customOrange'>soutien</span> d'un handicapé</p>
+        <div className='bg-black/60 h-full w-full py-16 md:py-34 px-4 md:px-9'>
+          <p className=' text-2xl md:text-4xl leading-relaxed font-roboto text-white font-bold text-center'>Devenez le <span className='font-bold text-customOrange'>père</span>  d'un orphelin, le <span className='font-bold text-customOrange'>défenseur</span>  d'une veuve, le <span className='font-bold text-customOrange'>soutien</span> d'un handicapé</p>
         </div>
 
       </div>

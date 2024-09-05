@@ -30,7 +30,7 @@ const Causes = () => {
             <div className='max-w-[80rem] mt-8'>
 
                 <div className="text-zinc-950 justify-center text-center">
-                    <h1 className="font-roboto text-5xl font-bold text-customOrange">
+                    <h1 className="font-roboto text-3xl md:text-5xl font-bold text-customOrange">
                         Nos causes
                     </h1>
                     <Ligne></Ligne>

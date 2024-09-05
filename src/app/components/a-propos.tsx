@@ -4,15 +4,15 @@ import Ligne from './widgets/ligne'
 const Fondateur = () => {
     return (
         <section id='a-propos' className='my-24 flex flex-col items-center '>
-            <h1 className='font-roboto text-center my-2'>A propos</h1>
+            <h1 className='font-roboto text-center my-2 text-3xl md:text-5xl'>A propos</h1>
             <Ligne></Ligne>
-            <p className='max-w-[800px] m-6 pb-6 text-center'> <span className='font-bold'>Yendoubé</span> est dédié à promouvoir la justice sociale et l'inclusion à travers des actions concrètes. Notre mission est de défendre les droits des veuves, de scolariser les orphelins et de soutenir les personnes handicapées. En travaillant avec passion et détermination, nous visons à offrir une chance équitable à ceux qui en ont besoin, en leur fournissant protection, éducation et accompagnement. Nous croyons en un avenir où chacun a la possibilité de s’épanouir, malgré les défis de la vie. Rejoignez-nous dans notre engagement pour un monde plus juste et solidaire.</p>
+            <p className='max-w-[800px] m-6 pb-6'> <span className='font-bold'>Yendoubé</span> est dédié à promouvoir la justice sociale et l'inclusion à travers des actions concrètes. Notre mission est de défendre les droits des veuves, de scolariser les orphelins et de soutenir les personnes handicapées. En travaillant avec passion et détermination, nous visons à offrir une chance équitable à ceux qui en ont besoin, en leur fournissant protection, éducation et accompagnement. Nous croyons en un avenir où chacun a la possibilité de s’épanouir, malgré les défis de la vie. Rejoignez-nous dans notre engagement pour un monde plus juste et solidaire.</p>
             <div className='flex justify-center '>
                 <div className=' flex flex-wrap m-8  justify-center gap-6'>
-                    <img src="/fonder.png" alt="" className='w-96 h-[550px] object-cover' />
+                    <img src="/fonder.png" alt="" className='w-96 h-[300px] md:w-96 md:h-[550px] object-cover' />
                     <div className='max-w-96 flex flex-col'>
-                        <h3 className=' font-roboto text-zinc-700 underline underline-offset-8 px-4'>Fondateur</h3>
-                        <h2 className='text-start font-roboto'>Alede Kokou Joseph</h2>
+                        <h3 className='text-lg md:text-3xl font-roboto text-zinc-700 underline underline-offset-8 px-4'>Fondateur</h3>
+                        <h2 className='text-start font-roboto text-xl md:text-3xl'>Alede Kokou Joseph</h2>
                         <p className='px-4'>Révérend [Nom du fondateur] est un pasteur, enseignant et directeur d'école passionné par la justice sociale. Son engagement envers les veuves, les orphelins et les personnes handicapées découle de sa profonde foi et de son expérience éducative. Il inspire et dirige notre organisation avec compassion, visant à bâtir une communauté plus juste et solidaire.</p>
 
                         <div className='font-roboto text-center w-60 inline-block mx-4 mt-2 border-2 px-4 py-2 rounded-xl bg-customOrange/10 content-center gap-1'>

@@ -13,6 +13,20 @@ export const metadata: Metadata = {
   },
   title: "Yendoubé App",
   description: "Help orphan site",
+  openGraph: {
+    type: 'website',
+    url: 'https://yendoube.vercel.app/', // Remplace par l'URL de ton site
+    title: 'Mon Site Web',
+    description: 'Découvrez notre site web incroyable.',
+    images: [
+      {
+        url: 'https://i.ibb.co/zXsTRzL/Group-2-5.png', // URL de ton image
+        width: 1200,
+        height: 630,
+        alt: 'Image de partage pour les réseaux sociaux',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -37,15 +51,17 @@ export default function RootLayout({
               <br />
               <p className="text-white text-center">Nous nous engageons à défendre les veuves, à scolariser les orphelins et à soutenir les personnes handicapées. Notre mission est de garantir à chacun une chance égale de vivre dignement, en leur offrant protection, éducation et accompagnement. Ensemble, construisons un monde plus juste et inclusif, où chaque individu peut s'épanouir, quelles que soient les épreuves de la vie.</p>
               <div className="flex justify-center">
-                <div className="bg-white h-16 w-16 rounded-full p-4 flex justify-center m-2">
+                <a href="https://facebook.com" target="_blank"> <div className="bg-white h-16 w-16 rounded-full p-4 flex justify-center m-2">
                   <img src="./icons/facebook.png" alt="" className="w-12 object-contain" />
-                </div>
-                <div className="bg-white h-16 w-16 rounded-full p-4 flex justify-center m-2">
+                </div></a>
+                <a href="https://linkedin.com" target="_blank"> <div className="bg-white h-16 w-16 rounded-full p-4 flex justify-center m-2">
                   <img src="./icons/linkedin.png" alt="" className="w-12" />
                 </div>
-                <div className="bg-white h-16 w-16 rounded-full p-4 flex justify-center m-2">
+                </a>
+                <a href="https://twitter.com" target="_blank"> <div className="bg-white h-16 w-16 rounded-full p-4 flex justify-center m-2">
                   <img src="./icons/twitter.png" alt="" className="w-12" />
                 </div>
+                </a>
 
 
               </div>

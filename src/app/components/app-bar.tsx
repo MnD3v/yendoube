@@ -27,12 +27,12 @@ const AppBar = () => {
             <div className='w-full max-w-[96rem] flex justify-between items-center'>
                 <div className="cursor-pointer flex items-center">
                     <a href="#">
-                        <img src="/logo.png" alt="" className="h-16" />
+                        <img src="/logo.png" alt="" className="h-8 md:h-16" />
                     </a>
 
                 </div>
                 <button onClick={toggleMenu}>
-                    <img src="/icons/menu.png" alt="" className='md:hidden h-10' />
+                    <img src="/icons/menu.png" alt="" className='md:hidden h-8' />
                 </button>
 
                 {/* mobile menu */}
@@ -40,11 +40,11 @@ const AppBar = () => {
                     menuIsOpen && (
                         <div ref={menuRef} className='md:hidden fixed right-0 top-28 bg-white p-4 mx-6 shadow-lg'>
                             <ul className="">
-                                <li className=" px-3 py-2 text-zinc-950 hover:text-orange-400 transition-all duration-1000"> <a href="#presentation"> Accueil</a></li>
-                                <li className=" px-3 py-2 text-zinc-950 hover:text-orange-400"> <a href="#mission"> Mission</a></li>
-                                <li className=" px-3 py-2 text-zinc-950 hover:text-orange-400"> <a href="#a-propos"> A propos</a></li>
-                                <li className=" px-3 py-2 text-zinc-950 hover:text-orange-400"> <a href="#galerie"> Galerie</a></li>
-                                <li className=" px-3 py-2 text-zinc-950 hover:text-orange-400"> <a href="#contact"> Contact</a></li>
+                                <li className=" px-3 py-2 text-zinc-950 hover:text-orange-400 transition-all "> <button onClick={toggleMenu} className=" px-3 py-2 text-zinc-950 hover:text-orange-400 transition-all "> <a href="#presentation"> Accueil</a></button></li>
+                                <li className=" px-3 py-2 text-zinc-950 hover:text-orange-400"> <button onClick={toggleMenu} className=" px-3 py-2 text-zinc-950 hover:text-orange-400 transition-all "> <a href="#mission"> Mission</a></button></li>
+                                <li className=" px-3 py-2 text-zinc-950 hover:text-orange-400"><button onClick={toggleMenu} className=" px-3 py-2 text-zinc-950 hover:text-orange-400 transition-all ">  <a href="#a-propos"> A propos</a></button></li>
+                                <li className=" px-3 py-2 text-zinc-950 hover:text-orange-400"> <button onClick={toggleMenu} className=" px-3 py-2 text-zinc-950 hover:text-orange-400 transition-all "> <a href="#galerie"> Galerie</a></button></li>
+                                <li className=" px-3 py-2 text-zinc-950 hover:text-orange-400"> <button onClick={toggleMenu} className=" px-3 py-2 text-zinc-950 hover:text-orange-400 transition-all "> <a href="#contact"> Contact</a></button></li>
                             </ul>
                         </div>
                     )
@@ -52,7 +52,7 @@ const AppBar = () => {
                 {/* mobile menu */}
 
                 <ul className="max-md:hidden flex flex-row">
-                    <li className=" px-3 py-2 text-zinc-950 hover:text-orange-400 transition-all duration-1000"> <a href="#presentation"> Accueil</a></li>
+                    <li className=" px-3 py-2 text-zinc-950 hover:text-orange-400 transition-all "> <a href="#presentation"> Accueil</a></li>
                     <li className=" px-3 py-2 text-zinc-950 hover:text-orange-400"> <a href="#mission">Mission</a></li>
                     <li className=" px-3 py-2 text-zinc-950 hover:text-orange-400"> <a href="#a-propos"> A propos</a></li>
                     <li className=" px-3 py-2 text-zinc-950 hover:text-orange-400"> <a href="#galerie"> Galerie</a></li>
