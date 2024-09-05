@@ -18,7 +18,7 @@ const Mission = () => {
                     {/* ligne sous notre mission */}
 
                     <div className=' m-3 flex flex-row item-center justify-center flex-wrap'>
-                        <div className=' inline-block max-w-[48rem] p-12 border-l-2 border-b-2 border-r-2 border-customOrange/40 bg-customOrange/10 rounded-2xl'>
+                        <div className=' inline-block max-w-[48rem] p-3 md:p-12 border-l-2 border-b-2 border-r-2 border-zinc/40 bg-zinc-400/10 rounded-2xl shadow-lg'>
                             <img src="/icons/goal.png" alt="" className='h-16 inline' />
                             <p className='font-roboto font-semibold text-2xl   text-customOrange p-4'>Transformer</p>
                             <p className='text-zinc-700 leading-relaxed'><span className='font-bold'>Yendoubé</span>  s'engage à transformer la vie des personnes en difficulté en offrant un soutien complet, couvrant l'éducation, la sécurité alimentaire et la défense des droits. Nous travaillons avec les communautés pour surmonter les défis uniques des personnes vulnérables, en créant des opportunités qui favorisent leur autonomisation et leur contribution positive à la société, dans le but de bâtir un avenir plus juste et équitable.</p>

@@ -36,9 +36,9 @@ const Paiement = () => {
                         <p className='font-roboto font-semibold'>Votre email</p>
                         <input type="text" placeholder='Votre email' className='border-2 focus:border-1 focus:border-customOrange outline-none px-3 py-4 w-full' />
                     </div>
-                    <div className='flex col-span-2'>
+                    <div className='flex col-span-2 bg-green-300'>
                         <p className='px-4 h-16 bg-zinc-400 content-center text-white border-2'>FCFA</p>
-                        <input type="number" onChange={handleInputChange} placeholder='montant' className='relative right-2 border-2 focus:border-1 focus:border-customOrange outline-none px-3 h-16 w-60 ' />
+                        <input type="number" onChange={handleInputChange} placeholder='montant' className='w-full right-2 border-2 focus:border-1 focus:border-customOrange outline-none px-3 h-16  ' />
                     </div>
                     <Link href={`https://paygateglobal.com/v1/page?token=13c195ab-00aa-41a5-a8a5-5668cd77a623&amount=${inputValue}&description=test&identifier=${date}`} target='_blank'>     <button className='mt-3 w-56 bg-customOrange  py-3 rounded-full text-white '>
                         Donner
