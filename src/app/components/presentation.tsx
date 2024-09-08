@@ -78,7 +78,7 @@ const Presentation = () => {
                                 // Alterner entre 1 et 1.2, puis revenir à 1
                             }}
                             href='/paiement'>
-                            <button className="text-base font-semibold  delay-1000 animate-fade-in-up text-white bg-customOrange hover:bg-customOrange600 hover:ring-offset-2 ring-offset-black ring ring-customOrange/50 transition-all duration-500  px-5 py-3 md:px-8 md:py-4  my-10 mx-2 rounded-full">
+                            <button className="text-[1rem] md:text-base font-semibold  delay-1000 animate-fade-in-up text-white bg-black/30 hover:bg-customOrange600 hover:ring-offset-2 ring-offset-black ring ring-white transition-all duration-500  px-5 py-3 md:px-8 md:py-4  my-10 mx-2 ">
                                 DONNER MAINTENANT
                             </button>
                         </motion.a>

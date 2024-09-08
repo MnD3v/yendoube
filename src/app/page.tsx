@@ -75,7 +75,7 @@ export default function Home() {
           whileInView="show"
           className='bg-black/60 h-full w-full py-16 md:py-34 px-4 md:px-9'>
           <motion.p
-            variants={itemS(0.9, '0', 1.2)}
+            variants={itemS(0.9, '0', .5)}
             className=' text-2xl md:text-4xl leading-relaxed font-roboto text-white font-bold text-center'>Devenez le <span className='font-bold text-customOrange'>père</span>  d'un orphelin, le <span className='font-bold text-customOrange'>défenseur</span>  d'une veuve, le <span className='font-bold text-customOrange'>soutien</span> d'un handicapé</motion.p>
         </motion.div>
       </div>

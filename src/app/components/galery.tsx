@@ -18,7 +18,7 @@ const Galery = () => {
                     variants={itemS(0.9)}
                     className='m-4 font-roboto text-center text-3xl md:text-5xl'>Galerie</motion.h1>
             </motion.div>
-            <div className='flex flex-wrap items-center gap-4'>
+            <div className='flex flex-wrap items-center justify-center gap-4'>
                 {
                     images.map((element) =>
 

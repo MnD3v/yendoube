@@ -37,7 +37,7 @@ const Videos = () => {
 
                 </div>
                 <motion.div
-                    variants={itemS(0.9, -1, 1)}
+                    variants={itemS(0.9, -1,)}
                     className='w-[33rem] mx-4'>
                     <p className='font-roboto text-2xl font-bold'>Redonner le sourir</p>
                     <div className='w-28 h-px bg-customOrange my-6'></div>
@@ -46,9 +46,14 @@ const Videos = () => {
                 </motion.div>
             </motion.div>
             <div className='h-12'></div>
-            <div className='flex flex-wrap-reverse items-center justify-center'>
+            <motion.div
+                variants={container}
+                initial="hidden"
+                whileInView="show"
+                className='flex flex-wrap-reverse items-center justify-center'>
                 <motion.div
-                    variants={itemS(0.9, 1, 1)}
+                    variants={itemS(0.9)}
+
 
                     className='w-[33rem] mx-4'>
                     <p className='font-roboto text-2xl font-bold'>Aider un peu</p>
@@ -72,7 +77,7 @@ const Videos = () => {
 
                 </div>
 
-            </div>
+            </motion.div>
 
         </section>
     )

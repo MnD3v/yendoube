@@ -27,7 +27,7 @@ const Fondateur = () => {
                         <h2 className='text-start font-roboto text-xl md:text-3xl'>ALEDE Kokou Joseph</h2>
                         <p className='px-4'>Révérend ALEDE est un pasteur, enseignant et directeur d'école passionné par la justice sociale. Son engagement envers les veuves, les orphelins et les personnes handicapées découle de sa profonde foi et de son expérience éducative. Il inspire et dirige notre organisation avec compassion, visant à bâtir une communauté plus juste et solidaire.</p>
 
-                        <div className='font-roboto text-center w-60 inline-block mx-4 mt-2 border-2 px-4 py-2 rounded-xl bg-customOrange/10 content-center gap-1'>
+                        <div className='w-full font-roboto text-center inline-block mx-4 mt-2 border-2 px-4 py-2 bg-black/10 content-center gap-1'>
                             <p >aledekodou@gmail.com</p>
 
                             <p>+228 90144043</p>

@@ -1,6 +1,6 @@
 
 const itemS = function (duration: any, direction?: any, scale?: number) {
-    const safe_direction = direction ?? direction === '0' ? 0 : 1
+    const safe_direction = direction ?? 1
     const safe_scale = scale ?? 1
 
     return ({

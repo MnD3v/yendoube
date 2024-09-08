@@ -22,8 +22,8 @@ class Cause {
 const Causes = () => {
 
     const causes = [
-        new Cause({ image: '/scolarise.jpg', titre: 'Scolariser', description: "assurer l'accès à l'éducation des orphelins et des démunis, pour leur permettre de briser le cycle de la pauvreté et de bâtir un avenir autonome. Nous croyons que chaque enfant mérite une chance égale de réussir, quel que soit son parcours." }),
-        new Cause({ image: '/widow.webp', titre: 'Défendre', description: "défendre les droits des veuves, souvent vulnérables face à l’injustice et à la discrimination. Nous nous engageons à leur offrir un soutien juridique, social et moral afin qu'elles puissent retrouver leur dignité et exercer pleinement leurs droits." }),
+        new Cause({ image: '/scolarise.jpg', titre: 'Scolariser', description: "Assurer l'accès à l'éducation des orphelins et des démunis, pour leur permettre de briser le cycle de la pauvreté et de bâtir un avenir autonome. Nous croyons que chaque enfant mérite une chance égale de réussir, quel que soit son parcours." }),
+        new Cause({ image: '/widow.webp', titre: 'Défendre', description: "Défendre les droits des veuves, souvent vulnérables face à l’injustice et à la discrimination. Nous nous engageons à leur offrir un soutien juridique, social et moral afin qu'elles puissent retrouver leur dignité et exercer pleinement leurs droits." }),
         new Cause({ image: '/handicap.jpg', titre: 'Soutenir', description: "Soutenir les personnes en situation de handicap en leur offrant les ressources et l'accompagnement nécessaires pour vivre avec dignité et autonomie. Nous œuvrons pour une société inclusive où chacun, indépendamment de ses capacités, a les mêmes opportunités de s'épanouir et de contribuer pleinement." }),
 
 
@@ -49,23 +49,24 @@ const Causes = () => {
                         {
                             causes.map((element) =>
                             (
-                                <div key={element.titre} className='cursor-pointer hover:bg-zinc-50-50 w-80 shadow-xl m-6 overflow-hidden'>
+                                <div key={element.titre} className=' cursor-pointer hover:bg-zinc-50-50 w-80 shadow-xl m-6 overflow-hidden'>
                                     <img src={element.image} alt="" className='w-80 h-60 object-cover hover:scale-105 transition-all duration-300' />
-                                    <div className='p-6'>
-                                        <p className='font-roboto font-semibold text-lg'>{element.titre}</p>
-                                        <p>{element.description} </p>
+                                    <div className='p-6 flex flex-col items-center justify-center'>
+                                        <p className='font-roboto font-semibold text-xl md:text-2xl text-customOrange'>{element.titre}</p>
+                                        <div className='h-px w-20 bg-customOrange m-4'></div>
+                                        <p className='text-zinc-700'>{element.description} </p>
                                         <a href={"/paiement"}
 
 
                                         > <motion.button
-                                            animate={{ scale: [1, 1.2], backgroundColor: ["#ffffff", "#F8B864",] }}  // L'animation alterne entre scale 1 et 1.2
-                                            transition={{
-                                                duration: 3.5,      // Durée de chaque phase
-                                                repeat: Infinity,   // Répéter à l'infini
-                                                // Alterner entre 1 et 1.2, puis revenir à 1
-                                            }}
-                                            className='m-3 hover:ring-4 ring-customOrange/30 
-                                            shadow-lg
+                                            // animate={{ scale: [1, 1.2], backgroundColor: ["#ffffff", "#F8B864",] }}  // L'animation alterne entre scale 1 et 1.2
+                                            // transition={{
+                                            //     duration: 3.5,      // Durée de chaque phase
+                                            //     repeat: Infinity,   // Répéter à l'infini
+                                            //     // Alterner entre 1 et 1.2, puis revenir à 1
+                                            // }}
+                                            className='my-4 w-full hover:ring-4 ring-customOrange/30 
+                                            shadow-lg border-4 border-customOrange
                                             hover:shadow-xl hover:bg-customOrange600 px-16 py-3  text-black'>
                                                 Donner
                                             </motion.button>
