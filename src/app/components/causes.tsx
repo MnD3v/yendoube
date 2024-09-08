@@ -1,6 +1,10 @@
+"use client"
 import React from 'react'
 import Ligne from './widgets/ligne'
 import Link from 'next/link';
+import { motion } from 'framer-motion';
+import itemS from './utils/item';
+import container from './utils/container';
 
 
 class Cause {
@@ -29,22 +33,43 @@ const Causes = () => {
         <section id="mission" className='flex flex-col items-center mt-8'>
             <div className='max-w-[80rem] mt-8'>
 
-                <div className="text-zinc-950 justify-center text-center">
-                    <h1 className="font-roboto text-3xl md:text-5xl font-bold text-customOrange">
+                <motion.div
+                    variants={container}
+                    initial="hidden"
+                    whileInView="show"
+                    className="text-zinc-950 justify-center text-center">
+                    <motion.h1
+                        variants={itemS(0.9)}
+                        className="font-roboto text-3xl md:text-5xl font-bold text-customOrange">
                         Nos causes
-                    </h1>
+                    </motion.h1>
                     <Ligne></Ligne>
                     <div className='flex flex-wrap justify-center'>
 
                         {
                             causes.map((element) =>
                             (
-                                <div key={element.titre} className='w-80 shadow-xl m-6 overflow-hidden'>
+                                <div key={element.titre} className='cursor-pointer hover:bg-zinc-50-50 w-80 shadow-xl m-6 overflow-hidden'>
                                     <img src={element.image} alt="" className='w-80 h-60 object-cover hover:scale-105 transition-all duration-300' />
                                     <div className='p-6'>
                                         <p className='font-roboto font-semibold text-lg'>{element.titre}</p>
                                         <p>{element.description} </p>
-                                        <Button></Button>
+                                        <a href={"/paiement"}
+
+
+                                        > <motion.button
+                                            animate={{ scale: [1, 1.2], backgroundColor: ["#ffffff", "#F8B864",] }}  // L'animation alterne entre scale 1 et 1.2
+                                            transition={{
+                                                duration: 3.5,      // Durée de chaque phase
+                                                repeat: Infinity,   // Répéter à l'infini
+                                                // Alterner entre 1 et 1.2, puis revenir à 1
+                                            }}
+                                            className='m-3 hover:ring-4 ring-customOrange/30 
+                                            shadow-lg
+                                            hover:shadow-xl hover:bg-customOrange600 px-16 py-3  text-black'>
+                                                Donner
+                                            </motion.button>
+                                        </a>
                                     </div>
 
                                 </div>
@@ -56,7 +81,7 @@ const Causes = () => {
                     </div>
 
 
-                </div>
+                </motion.div>
             </div>
         </section>
     )
@@ -67,12 +92,4 @@ export default Causes
 
 
 
-const Button = () => {
-    return (
-        <Link href={"/paiement"}> <button className='m-3 bg-customOrange hover:ring-4 ring-customOrange/30 hover:shadow-lg px-16 py-3 rounded-full text-white'>
-            Donner
-        </button>
-        </Link>
-    )
-}
 

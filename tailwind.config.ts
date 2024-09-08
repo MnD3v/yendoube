@@ -24,7 +24,8 @@ const config: Config = {
         'fade-in-up': 'fade-in-up 0.5s ease-out',
       },
       colors:{
-        customOrange: "#F8B864"
+        customOrange: "#F8B864",
+        customOrange600: "#ff9b19"
       },
       fontFamily:{
         dmSerif: ["DM Serif Text", "monospace"],

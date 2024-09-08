@@ -22,7 +22,8 @@
 }
 
 * {
-  transition: all 600ms ease;
+  transition: all 600ms ease-out;
+  font-family: 'Poppins';
 }
 
 html {
@@ -39,8 +40,12 @@ body {
 
 li {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   color: #414141;
+}
+
+button {
+  text-transform: uppercase;
 }
 
 h1 {

@@ -1,8 +1,13 @@
+import { useRouter } from 'next/navigation';
 import React, { useEffect, useRef, useState } from 'react'
 
 
 
 const AppBar = () => {
+
+    const router = useRouter();
+
+
     const [menuIsOpen, setIsOpen] = useState(false)
     const menuRef = useRef<HTMLDivElement>(null)
 
@@ -11,6 +16,7 @@ const AppBar = () => {
     }
 
     useEffect(() => {
+
         const handleClickOutside = (event: MouseEvent) => {
             if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
                 setIsOpen(false)
