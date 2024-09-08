@@ -1,9 +1,24 @@
+"use client"
 import { motion } from 'framer-motion'
-import React from 'react'
+import React, { useState } from 'react'
 import itemS from './utils/item'
 import container from './utils/container'
 
 const Contacter = () => {
+
+    const [showNotification, setShowNotification] = useState(false);
+
+    const handleSendMessage = () => {
+        console.log("Message envoyé");
+
+        setShowNotification(true);
+
+        setTimeout(() => {
+            setShowNotification(false);
+        }, 3000);
+    };
+
+
     return (
         <section className='my-16 flex flex-col items-center'>
             <motion.div
@@ -22,7 +37,9 @@ const Contacter = () => {
                     <textarea placeholder='Message' className='my-6 p-4 w-full border-b-2 outline-none focus:border-customOrange' />
 
                 </div>
-                <button className='m-3 bg-customOrange hover:ring-4 ring-customOrange/30 hover:shadow-lg hover:bg-customOrange600 px-16 py-3 rounded-full text-white'>
+                <button
+                    onClick={handleSendMessage}
+                    className='m-3 bg-customOrange hover:ring-4 ring-customOrange/30 hover:shadow-lg hover:bg-customOrange600 px-16 py-3 rounded-full text-white'>
                     Envoyer
                 </button>
                 <h3 className='font-roboto text-customOrange'>Contacts</h3>
@@ -37,6 +54,16 @@ const Contacter = () => {
                 <p>Dapaong-Tantigou</p>
 
             </motion.div>
+            {showNotification && (
+                <motion.div
+                    initial={{ opacity: 0, y: 90 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 90 }}
+                    className="transition-all duration-700 fixed bottom-12 left-auto bg-green-500 text-white px-8 py-4 rounded shadow-lg"
+                >
+                    Message envoyé avec succès !
+                </motion.div>
+            )}
         </section>
     )
 }
