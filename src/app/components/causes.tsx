@@ -50,11 +50,20 @@ const Causes = () => {
                             causes.map((element) =>
                             (
                                 <div key={element.titre} className=' cursor-pointer hover:bg-zinc-50-50 w-80 shadow-xl m-6 overflow-hidden'>
-                                    <img src={element.image} alt="" className='w-80 h-60 object-cover hover:scale-105 transition-all duration-300' />
+                                    <motion.img src={element.image} alt=""
+                                        initial={{ opacity: 0, scale: 0.9 }}
+                                        whileInView={{ opacity: 1, scale: 1 }}
+                                        className='w-80 h-60 object-cover hover:scale-105 transition-all duration-300' />
                                     <div className='p-6 flex flex-col items-center justify-center'>
-                                        <p className='font-roboto font-semibold text-xl md:text-2xl text-customOrange'>{element.titre}</p>
+                                        <motion.p
+                                            initial={{ opacity: 0, y: -20 }}
+                                            whileInView={{ opacity: 1, y: 0 }}
+                                            className='font-roboto font-semibold text-xl md:text-2xl text-customOrange'>{element.titre}</motion.p>
                                         <div className='h-px w-20 bg-customOrange m-4'></div>
-                                        <p className='text-zinc-700'>{element.description} </p>
+                                        <motion.p
+                                            initial={{ opacity: 0, y: -30 }}
+                                            whileInView={{ opacity: 1, y: 0 }}
+                                            className='text-zinc-700'>{element.description} </motion.p>
                                         <a href={"/paiement"}
 
 
@@ -65,6 +74,8 @@ const Causes = () => {
                                             //     repeat: Infinity,   // Répéter à l'infini
                                             //     // Alterner entre 1 et 1.2, puis revenir à 1
                                             // }}
+                                            initial={{ opacity: 0, scale: 0 }}
+                                            whileInView={{ opacity: 1, scale: 1 }}
                                             className='my-4 w-full hover:ring-4 ring-customOrange/30 
                                             shadow-lg border-4 border-customOrange
                                             hover:shadow-xl hover:bg-customOrange600 px-16 py-3  text-black'>

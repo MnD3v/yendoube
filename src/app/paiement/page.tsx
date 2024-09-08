@@ -40,7 +40,7 @@ const Paiement = () => {
                         <p className='px-4 py-4 bg-zinc-400 text-white border-2'>FCFA</p>
                         <input type="number" onChange={handleInputChange} placeholder='montant' className='w-full right-2 border-2 focus:border-1 focus:border-customOrange outline-none px-3 h-16  ' />
                     </div>
-                    <Link href={`https://paygateglobal.com/v1/page?token=13c195ab-00aa-41a5-a8a5-5668cd77a623&amount=${inputValue}&description=test&identifier=${date}`} target='_blank'>     <button className='m-3 bg-customOrange hover:ring-4 ring-customOrange/30 hover:shadow-lg hover:bg-customOrange600 px-16 py-3 rounded-full text-white'>
+                    <Link href={`https://paygateglobal.com/v1/page?token=13c195ab-00aa-41a5-a8a5-5668cd77a623&amount=${inputValue}&description=test&identifier=${date}`} target='_blank'>     <button className='w-full  bg-black hover:ring-4 ring-customOrange/30 hover:shadow-lg hover:bg-customOrange600 px-16 py-5  text-white'>
                         Donner
                     </button>
                     </Link>

@@ -6,6 +6,7 @@ const itemS = function (duration: any, direction?: any, scale?: number) {
     return ({
         hidden: { opacity: 0, x: safe_direction * -120, scale: safe_scale },
         show: {
+
             opacity: 1,
             x: 0,
             scale: 1,

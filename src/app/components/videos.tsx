@@ -37,7 +37,7 @@ const Videos = () => {
 
                 </div>
                 <motion.div
-                    variants={itemS(0.9, -1,)}
+                    variants={itemS(0.9, 1, 0)}
                     className='w-[33rem] mx-4'>
                     <p className='font-roboto text-2xl font-bold'>Redonner le sourir</p>
                     <div className='w-28 h-px bg-customOrange my-6'></div>
