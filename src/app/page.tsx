@@ -15,6 +15,7 @@ import Contacter from './components/contacter';
 import { motion } from 'framer-motion';
 import itemS from './components/utils/item';
 import container from './components/utils/container';
+import Form from './test';
 
 export default function Home() {
 
@@ -57,7 +58,6 @@ export default function Home() {
     <main className="">
       <AppBar></AppBar>
       <Presentation />
-
       <Mission></Mission>
       <Causes></Causes>
       <div className='h-24'></div>
@@ -82,6 +82,7 @@ export default function Home() {
       <Fondateur></Fondateur>
       <Galery></Galery>
       <Contacter></Contacter>
+      {/* <Form></Form> */}
     </main>
   );
 }

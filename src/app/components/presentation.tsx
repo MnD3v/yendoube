@@ -40,7 +40,7 @@ const Presentation = () => {
 
 
 
-            <motion.div className="w-full bg-cover bg-[url('/orphan.jpg')]">
+            <motion.div className="w-full bg-cover bg-black bg-[url('/orphan.jpg')]">
                 <motion.div className='mt-16 md:mt-28 bg-black/30 px-10 py-12 md:py-20 w-full flex flex-col items-center'>
                     <motion.div
                         variants={container}
@@ -94,3 +94,32 @@ const Presentation = () => {
 }
 
 export default Presentation
+
+
+
+/* HTML: <div class="loader"></div> */
+//     .loader {
+//     width: 50px;
+//     aspect - ratio: 1;
+//     display: grid;
+//     border: 4px solid #0000;
+//     border - radius: 50 %;
+//     border - right - color: #25b09b;
+//     animation: l15 1s infinite linear;
+// }
+//   .loader:: before,
+//   .loader::after {
+//     content: "";
+//     grid - area: 1 / 1;
+//     margin: 2px;
+//     border: inherit;
+//     border - radius: 50 %;
+//     animation: l15 2s infinite;
+// }
+//   .loader::after {
+//     margin: 8px;
+//     animation - duration: 3s;
+// }
+// @keyframes l15{
+//     100 % { transform: rotate(1turn) }
+// }
