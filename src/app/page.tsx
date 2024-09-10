@@ -55,7 +55,10 @@ export default function Home() {
 
 
   return (
-    <main className="">
+    <motion.main
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="">
       <AppBar></AppBar>
       <Presentation />
       <Mission></Mission>
@@ -83,6 +86,6 @@ export default function Home() {
       <Galery></Galery>
       <Contacter></Contacter>
       {/* <Form></Form> */}
-    </main>
+    </motion.main>
   );
 }
