@@ -33,8 +33,6 @@ const AppBar = () => {
 
     return (
         <motion.div className=" bg-white fixed top-0 h-16 md:h-28 inset-0 flex flex-row justify-center px-10 py-8 z-10 shadow-md"
-            initial={{ y: -112 }}
-            whileInView={{ y: 0, transition: { delay: 0.3, } }}
         >
             <div className='w-full max-w-[96rem] flex justify-between items-center'>
                 <div className="cursor-pointer flex items-center">
