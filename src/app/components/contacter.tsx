@@ -47,8 +47,8 @@ const Contacter = () => {
                     // whileInView={{ opacity: 1, x: 0 }}
                     variants={itemS(0.9)}
                     className='font-roboto text-3xl md:text-5xl'>Nous contacter</motion.h1>
-                <form onSubmit={handleSubmit} className="space-y-4 flex flex-col items-center">
-                    <div className='mx-4'>
+                <form onSubmit={handleSubmit} className="space-y-4 flex flex-col items-center w-96">
+                    <div className=''>
                         <label htmlFor="name" className="text-sm font-medium text-gray-300">
                             Nom Complet *
                         </label>
@@ -57,7 +57,7 @@ const Contacter = () => {
                             id="name"
                             name="name"
                             required
-                            className="mt-1 w-full px-3 py-2 bg-zinc-50 text-white border border-zinc-400 rounded-md focus:outline-none focus:ring-2 focus:ring-customOrange focus:border-none"
+                            className="mt-1 w-full px-3 py-2 bg-zinc-50  border border-zinc-400 rounded-md focus:outline-none focus:ring-2 focus:ring-customOrange focus:border-none"
                             value={formData.name}
                             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         />
@@ -75,7 +75,7 @@ const Contacter = () => {
                             id="message"
                             name="message"
                             required
-                            className="mt-1 w-full px-3 py-2 bg-zinc-50 text-white border border-zinc-400 rounded-md focus:outline-none focus:ring-2 focus:ring-customOrange focus:border-none"
+                            className="mt-1 w-full px-3 py-2 bg-zinc-50  border border-zinc-400 rounded-md focus:outline-none focus:ring-2 focus:ring-customOrange focus:border-none"
                             value={formData.message}
                             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         />

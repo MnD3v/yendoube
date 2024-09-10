@@ -51,9 +51,9 @@ const Causes = () => {
                             (
                                 <div key={element.titre} className=' cursor-pointer hover:bg-zinc-50-50 w-80 shadow-xl m-6 overflow-hidden'>
                                     <motion.img src={element.image} alt=""
-                                        initial={{ opacity: 0, scale: 0.9 }}
-                                        whileInView={{ opacity: 1, scale: 1 }}
-                                        className=' w-80 h-60 object-cover hover:scale-105 transition-all duration-300' />
+                                        initial={{ opacity: 0, }}
+                                        whileInView={{ opacity: 1, }}
+                                        className=' w-80 h-60 object-cover hover:scale-105 ' />
                                     <div className='p-6 flex flex-col items-center justify-center'>
                                         <motion.p
                                             initial={{ opacity: 0, y: -20 }}
@@ -77,8 +77,8 @@ const Causes = () => {
                                             initial={{ opacity: 0, scale: 0 }}
                                             whileInView={{ opacity: 1, scale: 1 }}
                                             className='my-4 w-full hover:ring-4 ring-customOrange/30 
-                                            shadow-lg border-4 border-customOrange
-                                            hover:shadow-xl hover:bg-customOrange600 px-16 py-3  text-black'>
+                                            shadow-lg border border-customOrange
+                                            hover:shadow-xl hover:bg-customOrange600 px-16 py-3  text-customOrange hover:text-white'>
                                                 Donner
                                             </motion.button>
                                         </a>

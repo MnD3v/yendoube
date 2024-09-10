@@ -30,7 +30,7 @@ const Galery = () => {
                         whileInView={{ opacity: 1, scale: 1, transition: { duration: 0.5 * images.indexOf(element) } }}
 
                         className='w-72  overflow-hidden cursor-pointer shadow-lg'>
-                        <Link href={element.image}>
+                        <Link href="/evenements/scolarisation">
                             <img src={element.image} alt="" className='relative w-72 h-60 object-cover hover:scale-110' />
                         </Link>
                         <div className='p-4'>

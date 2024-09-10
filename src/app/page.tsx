@@ -9,7 +9,7 @@ import Causes from './components/causes';
 import Videos from './components/videos';
 import CommentAider from './components/comment-aider';
 import Fondateur from './components/a-propos';
-import Galery from './components/galery';
+import Galery from './components/evenements';
 import { useEffect } from 'react';
 import Contacter from './components/contacter';
 import { motion } from 'framer-motion';

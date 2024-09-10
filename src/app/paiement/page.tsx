@@ -128,7 +128,7 @@ const Paiement = () => {
                 <br />
                 <h1 className='font-roboto text-3xl md:text-5xl'>Paiement</h1>
                 <h3 className='text-lg text-slate-700'>Informations personnelles</h3>
-                <div className=' my-9 flex flex-col  max-w-[850px] p-9 bg-zinc-200'>
+                <div className=' my-9 flex flex-col  max-w-[850px] px-2 py-6 md:p-9 md:bg-zinc-200'>
                     <div className=' md:grid grid-cols-2 gap-3'>
                         <div className='w-full'>
 
@@ -141,10 +141,10 @@ const Paiement = () => {
                             <input type="text" placeholder='Votre prénom' className='border-2 focus:border-1 focus:border-customOrange outline-none px-3 py-4 w-full' />
                         </div>
 
-                        <div className='bg-white p-2 border flex flex-row justify-between items-center col-span-2 h-20'>
+                        <div className='bg-white p-1 border flex flex-row justify-between items-center col-span-2 h-16 mb-3 md:mb-0'>
                             <button onClick={() => {
                                 setNetwork('FLOOZ')
-                            }} className={`h-full w-1/2 ${network === 'FLOOZ' ? 'bg-customOrange' : 'bg-transparent'}  content-center justify-center text-center`}>
+                            }} className={`h-full w-1/2 ${network === 'FLOOZ' ? 'bg-customOrange' : 'bg-transparent'}  content-center justify-center text-center border-customOrange`}>
                                 <motion.div >
                                     Flooz
                                 </motion.div>
@@ -161,7 +161,7 @@ const Paiement = () => {
                         </div>
                         <div className='flex flex-col col-span-2'>
                             <div className='flex'>
-                                <p className='px-4 py-4 bg-customOrange text-black border-2'>+228</p>
+                                <p className='px-4 py-4 bg-customOrange border-customOrange text-black border-2'>+228</p>
                                 <input type="number" onChange={
 
                                     (event: any) => {
@@ -179,7 +179,7 @@ const Paiement = () => {
 
                         <div className='flex flex-col col-span-2 my-4'>
                             <div className='flex'>
-                                <p className='px-4 py-4 bg-customOrange text-black border-2'>FCFA</p>
+                                <p className='px-4 py-4 border-customOrange bg-customOrange text-black border-2'>FCFA</p>
                                 <input type="number" onChange={
 
                                     (event: any) => {

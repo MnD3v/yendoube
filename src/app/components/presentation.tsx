@@ -71,7 +71,7 @@ const Presentation = () => {
 
                         <motion.a
                             variants={itemS(2.4)}
-                            animate={{ scale: [1, 1.2] }}  // L'animation alterne entre scale 1 et 1.2
+                            // animate={{ scale: [1, 1.2] }}  // L'animation alterne entre scale 1 et 1.2
                             transition={{
                                 duration: 3.5,      // Durée de chaque phase
                                 repeat: Infinity,   // Répéter à l'infini
