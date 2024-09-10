@@ -48,7 +48,7 @@ const Contacter = () => {
                     // whileInView={{ opacity: 1, x: 0 }}
                     variants={itemS(0.9)}
                     className='font-roboto text-3xl md:text-5xl'>Nous contacter</motion.h1>
-                <form onSubmit={handleSubmit} className="space-y-4 flex flex-col items-center w-full w-max-96">
+                <form onSubmit={handleSubmit} className="m-3 space-y-4 flex flex-col items-center w-full w-max-96">
                     <div className=''>
                         <label htmlFor="name" className="text-sm font-medium text-gray-300">
                             Nom Complet *

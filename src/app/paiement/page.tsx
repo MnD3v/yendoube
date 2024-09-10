@@ -92,7 +92,6 @@ const Paiement = () => {
             if (status === '0') {
                 if (intervalRef.current) {
                     clearInterval(intervalRef.current)
-
                 }
             }
         });
