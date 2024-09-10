@@ -7,7 +7,7 @@ import React, { useEffect, useRef, useState } from 'react'
 const AppBar = () => {
 
     const pathname = usePathname();
-    const inPaiement = pathname === '/paiement' ? true : false;
+    const inPaiement = pathname != '/' ? true : false;
 
 
     const [menuIsOpen, setIsOpen] = useState(false)

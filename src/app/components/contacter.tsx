@@ -41,13 +41,14 @@ const Contacter = () => {
                 initial="hidden"
                 whileInView="show"
                 aria-required
-                className='flex flex-col items-center max-w-[888px] content-center '>
+                className='flex flex-col items-center w-full max-w-[888px] 
+               content-center '>
                 <motion.h1
                     // initial={{ opacity: 0, x: -100 }}
                     // whileInView={{ opacity: 1, x: 0 }}
                     variants={itemS(0.9)}
                     className='font-roboto text-3xl md:text-5xl'>Nous contacter</motion.h1>
-                <form onSubmit={handleSubmit} className="space-y-4 flex flex-col items-center w-96">
+                <form onSubmit={handleSubmit} className="space-y-4 flex flex-col items-center w-full w-max-96">
                     <div className=''>
                         <label htmlFor="name" className="text-sm font-medium text-gray-300">
                             Nom Complet *
