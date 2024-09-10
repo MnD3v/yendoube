@@ -24,11 +24,12 @@ const Presentation = () => {
     const itemS = (duration: any) => ({
         hidden: { opacity: 0, y: 120 },
         show: {
+
             opacity: 1,
             y: 0,
             transition: {
-                opacity: { duration: duration, },  // Animation linéaire pour l'opacité
-                y: { duration: duration, },        // Animation linéaire pour la translation
+                opacity: { duration: duration, delay: 0.4 },  // Animation linéaire pour l'opacité
+                y: { duration: duration, delay: 0.4 },        // Animation linéaire pour la translation
             },
         },
     });
@@ -73,6 +74,7 @@ const Presentation = () => {
                             variants={itemS(2.4)}
                             // animate={{ scale: [1, 1.2] }}  // L'animation alterne entre scale 1 et 1.2
                             transition={{
+
                                 duration: 3.5,      // Durée de chaque phase
                                 repeat: Infinity,   // Répéter à l'infini
                                 // Alterner entre 1 et 1.2, puis revenir à 1

@@ -1,4 +1,5 @@
 "use client"
+import { motion } from 'framer-motion';
 import { usePathname, useRouter } from 'next/navigation';
 import React, { useEffect, useRef, useState } from 'react'
 
@@ -31,7 +32,10 @@ const AppBar = () => {
     }, [])
 
     return (
-        <div className=" bg-white fixed top-0 h-16 md:h-28 inset-0 flex flex-row justify-center px-10 py-8 z-10 shadow-md">
+        <motion.div className=" bg-white fixed top-0 h-16 md:h-28 inset-0 flex flex-row justify-center px-10 py-8 z-10 shadow-md"
+            initial={{ y: -112 }}
+            whileInView={{ y: 0, transition: { delay: 0.3, } }}
+        >
             <div className='w-full max-w-[96rem] flex justify-between items-center'>
                 <div className="cursor-pointer flex items-center">
                     <a href={inPaiement ? "/" : "#"}>
@@ -67,7 +71,7 @@ const AppBar = () => {
                     <li className=" px-3 py-2 text-zinc-950 hover:text-orange-400"> <a href={inPaiement ? "/" : "#contact"}> Contact</a></li>
                 </ul>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

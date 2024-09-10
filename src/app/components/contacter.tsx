@@ -42,53 +42,48 @@ const Contacter = () => {
                 whileInView="show"
                 aria-required
                 className='flex flex-col items-center w-full max-w-[888px] 
-               content-center '>
+               content-center'>
                 <motion.h1
                     // initial={{ opacity: 0, x: -100 }}
                     // whileInView={{ opacity: 1, x: 0 }}
                     variants={itemS(0.9)}
                     className='font-roboto text-3xl md:text-5xl'>Nous contacter</motion.h1>
-                <form onSubmit={handleSubmit} className="m-3 space-y-4 flex flex-col items-center w-full w-max-96">
-                    <div className=''>
-                        <label htmlFor="name" className="text-sm font-medium text-gray-300">
-                            Nom Complet *
-                        </label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            required
-                            className="mt-1 w-full px-3 py-2 bg-zinc-50  border border-zinc-400 rounded-md focus:outline-none focus:ring-2 focus:ring-customOrange focus:border-none"
-                            value={formData.name}
-                            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        />
-                        {errors.name && (
-                            <p className="mt-1 text-sm text-red-500">{errors.name}</p>
-                        )}
-                    </div>
+                <form onSubmit={handleSubmit} className="space-y-4 flex flex-col items-center ">
 
-                    <div>
-                        <label htmlFor="message" className="text-sm font-medium text-gray-300">
-                            Votre message *
-                        </label>
-                        <textarea
-
-                            id="message"
-                            name="message"
-                            required
-                            className="mt-1 w-full px-3 py-2 bg-zinc-50  border border-zinc-400 rounded-md focus:outline-none focus:ring-2 focus:ring-customOrange focus:border-none"
-                            value={formData.message}
-                            onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        />
-                        {errors.message && (
-                            <p className="mt-1 text-sm text-red-500">{errors.message}</p>
-                        )}
+                    <label htmlFor="name" className="text-sm font-medium text-gray-300">
+                        Nom Complet *
+                    </label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        className="mt-1 w-full px-3 py-2 bg-zinc-50  border border-zinc-400 rounded-md focus:outline-none focus:ring-2 focus:ring-customOrange focus:border-none"
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    />
 
 
-                    </div>
+                    <label htmlFor="message" className="text-sm font-medium text-gray-300">
+                        Votre message *
+                    </label>
+                    <textarea
+
+                        id="message"
+                        name="message"
+                        required
+                        className=" mt-1 w-full px-3 py-2 bg-zinc-50  border border-zinc-400 rounded-md focus:outline-none focus:ring-2 focus:ring-customOrange focus:border-none"
+                        value={formData.message}
+                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    />
+
+
+
+
 
                     <button
                         type="submit"
+
                         className=" mb-6 bg-zinc-600 text-white px-12 py-2 rounded hover:bg-zinc-800"
                     >
                         Envoyer
