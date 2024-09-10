@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import AppBar from './app-bar'
 import Link from 'next/link'
 import { animate, motion } from "framer-motion";
+import Donner from './widgets/donner';
 
 
 
@@ -66,7 +67,7 @@ const Presentation = () => {
                         <motion.p
                             variants={itemS(1.9)}
 
-                            className="mt-10 text-white mx-2">
+                            className="mt-8 text-white mx-2">
                             Ensemble, donnons espoir et bâtissons un avenir pour tous.
                         </motion.p>
 
@@ -80,9 +81,7 @@ const Presentation = () => {
                                 // Alterner entre 1 et 1.2, puis revenir à 1
                             }}
                             href='/paiement'>
-                            <button className="text-[1rem] md:text-base font-semibold  delay-1000 animate-fade-in-up text-white bg-black/30 hover:bg-customOrange600 hover:ring-offset-2 ring-offset-black ring ring-white transition-all duration-500  px-5 py-3 md:px-8 md:py-4  my-10 mx-2 ">
-                                DONNER MAINTENANT
-                            </button>
+                            <Donner></Donner>
                         </motion.a>
 
                     </motion.div>

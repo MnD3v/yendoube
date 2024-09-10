@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import itemS from './utils/item';
 import container from './utils/container';
+import Donner from './widgets/donner';
 
 
 class Cause {
@@ -67,7 +68,7 @@ const Causes = () => {
                                         <a href={"/paiement"}
 
 
-                                        > <motion.button
+                                        > <motion.div
                                             // animate={{ scale: [1, 1.2], backgroundColor: ["#ffffff", "#F8B864",] }}  // L'animation alterne entre scale 1 et 1.2
                                             // transition={{
                                             //     duration: 3.5,      // Durée de chaque phase
@@ -76,11 +77,9 @@ const Causes = () => {
                                             // }}
                                             initial={{ opacity: 0, scale: 0 }}
                                             whileInView={{ opacity: 1, scale: 1 }}
-                                            className='my-4 w-full hover:ring-4 ring-customOrange/30 
-                                            shadow-lg border border-customOrange
-                                            hover:shadow-xl hover:bg-customOrange600 px-16 py-3  text-customOrange hover:text-white'>
-                                                Donner
-                                            </motion.button>
+                                        >
+                                                <Donner></Donner>
+                                            </motion.div>
                                         </a>
                                     </div>
 
